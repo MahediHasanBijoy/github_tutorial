@@ -78,6 +78,16 @@ $ git push -u origin main
 ## If anything is changed in remote repository then to take those changes locally we have to pull those changes from remote to local repository by this command-
 	$ git pull
 
+Then to push further changes from local to remote repository use 
+	$ git push 
+command.
+
+
+## To clone a github repository 
+	$ git clone https://github.com/mahedihasanbijoy/git_tutorial
+
+
+
 
 
 
