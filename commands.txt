@@ -50,6 +50,15 @@ $ touch .gitignore
 In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch.
 
 
+#1- To create a branch
+$ git branch login
+
+#2- To switch from master brach to new login branch
+$git checkout login
+
+#3- Create a new file named login.html
+$ touch login.html
+
 
 
 
