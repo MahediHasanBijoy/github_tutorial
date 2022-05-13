@@ -1,0 +1,24 @@
+#1- Initialize a git repo
+$ git init
+
+#2- Setting username 
+$ git config --global user.name 'Mahedi Hasan'
+
+#3- Setting user email
+$ git config --global user.email 'bijoycse2014@gmail.com'
+
+#4- To check username
+$ git config --global user.name
+
+#5- To check user email
+$ git config --global user.email
+
+#6- Adding a file to staging
+$ git add filename.ext
+
+#7- To check whats in staging area
+$ git status
+
+#8- To remove a file from staging area
+$ git rm --cached filename.ext
+
