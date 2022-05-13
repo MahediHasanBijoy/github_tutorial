@@ -13,6 +13,8 @@ $ git config --global user.name
 #5- To check user email
 $ git config --global user.email
 
+// Every files need to stage before commit
+
 #6- Adding a file to staging
 $ git add filename.ext
 
@@ -21,4 +23,17 @@ $ git status
 
 #8- To remove a file from staging area
 $ git rm --cached filename.ext
+
+#9- To add all the same file extensions to staging
+$ git add *.html
+
+#10- To add all files to staging area
+$ git add .
+
+#11- To commit the staged files
+$ git commit -m 'some message'
+
+
+
+
 
