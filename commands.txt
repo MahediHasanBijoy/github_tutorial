@@ -59,6 +59,20 @@ $git checkout login
 #3- Create a new file named login.html
 $ touch login.html
 
+#4- To merge the branch to the main branch we have to run this command from main branch
+	$ git merge login
+Then vim editor will open and we have to type a message by pressing 'i' and then press 'esc' after that ':wq' then we will exit from vim editor.
+And the branch will merged to the main branch and all the newly added files will be added to the main directory.
+
+
+------- To add our local repository to remote repository like github -------
+
+Firstly, open a github repository and then to push the commited files to github write these commands-
+
+$ git remote add origin https://github.com/mahedihasanbijoy/git_tutorial
+
+$ git push -u origin main
+
 
 
 
