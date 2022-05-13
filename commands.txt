@@ -33,6 +33,22 @@ $ git add .
 #11- To commit the staged files
 $ git commit -m 'some message'
 
+// The "$ git commit" command will take us into vim editor. To insert something we need to press 'i' key 
+// and type some text then to exit from insert mode we need to press 'Esc' key. Finally to exit from vim
+// we need to type ":wq" this command.
+
+
+#12- To ignore some files from adding to repos we need to create the .gitignore file
+$ touch .gitignore
+
+// To ignore files from adding to staging or commiting we need to write the filename in the .gitignore file
+
+// To ignore a entire folder we have to add the folder name with a '/' before it in the .gitignore file
+
+
+------------ Creating Branch ---------
+In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch.
+
 
 
 
