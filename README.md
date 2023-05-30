@@ -5,3 +5,92 @@ All the files are for sample uses and the commands.txt file is the git commands 
 There were a folder named dir2 which contains a app2.js file and a logs.txt which are ignored by .gitignore file.
 
 
+#1- Initialize a git repo
+$ git init
+
+#2- Setting username 
+$ git config --global user.name 'Mahedi Hasan'
+
+#3- Setting user email
+$ git config --global user.email 'bijoycse2014@gmail.com'
+
+#4- To check username
+$ git config --global user.name
+
+#5- To check user email
+$ git config --global user.email
+
+// Every files need to stage before commit
+
+#6- Adding a file to staging
+$ git add filename.ext
+
+#7- To check whats in staging area
+$ git status
+
+#8- To remove a file from staging area
+$ git rm --cached filename.ext
+
+#9- To add all the same file extensions to staging
+$ git add *.html
+
+#10- To add all files to staging area
+$ git add .
+
+#11- To commit the staged files
+$ git commit -m 'some message'
+
+// The "$ git commit" command will take us into vim editor. To insert something we need to press 'i' key 
+// and type some text then to exit from insert mode we need to press 'Esc' key. Finally to exit from vim
+// we need to type ":wq" this command.
+
+
+#12- To ignore some files from adding to repos we need to create the .gitignore file
+$ touch .gitignore
+
+// To ignore files from adding to staging or commiting we need to write the filename in the .gitignore file
+
+// To ignore a entire folder we have to add the folder name with a '/' before it in the .gitignore file
+
+
+------------ Creating Branch ---------
+In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch.
+
+
+#1- To create a branch
+$ git branch login
+
+#2- To switch from master brach to new login branch
+$git checkout login
+
+#3- Create a new file named login.html
+$ touch login.html
+
+#4- To merge the branch to the main branch we have to run this command from main branch
+	$ git merge login
+Then vim editor will open and we have to type a message by pressing 'i' and then press 'esc' after that ':wq' then we will exit from vim editor.
+And the branch will merged to the main branch and all the newly added files will be added to the main directory.
+
+
+------- To add our local repository to remote repository like github -------
+
+Firstly, open a github repository and then to push the commited files to github write these commands-
+
+$ git remote add origin https://github.com/mahedihasanbijoy/git_tutorial
+
+$ git push -u origin main
+
+
+
+## If anything is changed in remote repository then to take those changes locally we have to pull those changes from remote to local repository by this command-
+	$ git pull
+
+Then to push further changes from local to remote repository use 
+	$ git push 
+command.
+
+
+## To clone a github repository 
+	$ git clone https://github.com/mahedihasanbijoy/git_tutorial
+
+
